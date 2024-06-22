@@ -1,0 +1,68 @@
+####################Super Global Varibles####################
+#Only for command links
+$_SERVER['argv'];
+$_SERVER['argc'];
+
+
+#IMPORTANT
+$SERVER['PHP_SELF'];//Current PHP file name
+$SERVER['SERVER_ADDR'];//Getting Current Host Address
+$SERVER['SERVER_NAME'];//Getting Current Domain Name
+$SERVER['REQUEST_METHOD'];//Getting Request Method
+$SERVER['SERVER_PROTOCOL'];//Getting Server Protocol and Version
+$SERVER['REQUEST_TIME'];//Getting Request Time
+$SERVER['QUERY_STRING'];//Getting Query String
+$SERVER['DOCUMENT_ROOT'];//Getting Document Root
+$SERVER['HTTP_HOST'];//Getting HTTP Host
+$SERVER['HTTP_USER-AGENT'];//Getting User Agent
+$SERVER['SCRIPT_FILENAME'];//Absolute Path of Current File
+$SERVER['SERVER_PORT'];//Getting Port Number
+$SERVER['SCRIPT_NAME'];//Script File Name
+$SERVER['REQUEST_URI'];//Request URI
+$SERVER['REMOTE_ADDR'];//Remote Address
+
+
+#Not Frequently Use
+$SERVER_['GATEWAY_INTERFACE'];//Getting Gateway Interface
+$SERVER_['SERVER_SOFTWARE'];//Getting Server Software
+$SERVER_['HTTP_ACCEPT'];//Server HTTP Accept File Type
+$SERVER_['HTTP_ACCEPT_ENCODING'];//Server http accept gzip df..
+$SERVER_['HTTP_ACCEPT_LANGUAGE'];//Server Accept Language EN_US..
+$SERVER_['HTTP_CONNECTION'];//Connection
+$SERVER_['REMOTE_PORT'];//Remote Port
+$SERVER_['SERVER_ADMIN'];Server Admin
+$SERVER_['SERVER_SIGNATURE'];//Server Signaure
+
+
+
+#Deprecate & Offine Not work
+$SERVER['PATH_TRANSLATED'];
+$SERVER['HTTP_ACCEPT_CHARSET'];
+$SERVER['HTTP_REFERER'];
+$SERVER['HTTPS'];
+$SERVER['REMOTE_HOST'];
+$SERVER[PHP_AUTH_DIGEST];
+$SERVER['PHP_AUTH_USER'];
+$SERVER['PHP_AUTH_PW'];
+$SERVER['PATH-TYPE'];
+
+###########################Built-in Function#####################
+printf()            trim()         strtomp()     substr()
+fprintf()           ltrim()        strlen()      substr_replace()
+lcfirst()           rtrim()        strpos()      str_word_count()
+ucwords()           md5()          strrpos()     chr()
+strtoupper()        sha1()         stripos()     addcslashes()
+strtolower()        crypt()        strripos()
+addslashes()        htmlentities()     strip_tags()
+htmlspecialchars()
+###########################Additional ################### 
+-$_COOKIE[key same to name];=>setcookie(key,value,expire,path,domain,security)
+-$_SESSION[key]=$username;=>session_destroy();
+#############################Important Varibles###################
+$GLOBALS                $_REQUEST
+$_SERVER                $_COOKIE
+$_GET                   $_SESSION
+$_POST                  $_PHP_SELF
+$_FILES                 ERROR HANDLING
+#############################Useful Array Function################
+array_push()     array_shift()        array_pop()

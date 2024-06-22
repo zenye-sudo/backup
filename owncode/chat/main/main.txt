@@ -1,0 +1,31 @@
+******************************Very Important VEryIMport start*********************************8
+Whenever friends request and chat conservation,Formula the two result formula
+******************************Very Important VEryIMport end*********************************8
+-Firends system ko shu dout na myo nae lote pay ya tal.
+  1.Lote tae lu ka myin ya mae shu dout
+  2.Ma lote pae myin ya mae lu yae shu dout.
+-this.parentElement.children[0];
+-echo json_encode(array("accept"=>$array,"friends"=>$array1));
+-If you want to catch class name of the button come from ajax response
+  1.You can't catch class Name inner simple script
+  2.You can catch in the ajax response Text
+-this.parentElement.remove();
+-$result=$db->prepare("select * from users where (username LIKE ('%{$keywords}%') OR email LIKE('%{$keywords}%')) and id !={$own}");
+//For design
+ -Ta ku tae ta ku ket yet lote chin yin float-left and float-right and clear-both lote par.
+ Eg-<button style="float:left">Left</button>
+    <button style="float:left">Left</button>
+    <button style="float:right">Right</button>
+    //For last activity Start
+    $query="select table1.uid,table2.id,table2,username,table2.pp from table1 inner join table2 on table1.uid=table2.id where table1.last_activity>DATE_SUB(NOW(),INNER 5 SECOND);
+    //For last activity End
+//VERy important for sql
+-SELECT * FROM friends WHERE ((uid1=:one OR uid2=:two)OR(uid1=:two OR uid2=:one) ) AND friendship_offical='1'
+-select * from users where (id=:uid1 OR :uid2) and (id!={$_COOKIE['userid']})
+-select users.id from friends inner join users ON (friends.uid1=users.id OR friends.uid2=users.id ) where (((uid1=2 and uid2=1) OR (uid1=1 and uid2=2)) and friendship_offical='1') AND users.id!=2;
+-Let's review a few useful concepts about scrolling first:
+ scrollHeight: total container size.
+ scrollTop: amount of scroll user has done.
+ clientHeight: amount of container an user sees.
+ -         var form_data=new FormData;
+           form_data.append("file",img);

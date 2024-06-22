@@ -1,0 +1,35 @@
+*****************Web Design*********************************************************************
+-Navbar lote chin yin
+1.div=>navbar
+2.button=>navbar-toggler
+3.span=>navbar-toggler-icon data-toggle=collapse data-target=#id
+4.div=>collapse and navbar-collapse
+5.ul=>navbar-nav
+6.li=>nav-item
+7.a=>nav-link
+-form warning lote chin yin
+<small class="form-text text-muted">username must be contain special character</small>
+*******************Web  Development********
+    public function getMyDate(){
+        return date("Y/m/d H:m:s",time());
+    }
+Alway Forget session_start(); :)
+*****************Project Like System*********************
+ //Like System Start
+        if(MySession::checkSession("username")){
+            if(isset($_GET['lid'])){
+                $user=MySession::getSession("username");
+                $email=MySession::getSession("email");
+                $article=$_GET['lid'];
+                $insertLike=$db->exec("
+                INSERT INTO articles_like (user,email,article)
+                SELECT users.name,users.email,posts.id
+                FROM users
+                JOIN posts
+                WHERE EXISTS (SELECT id FROM posts WHERE id=$article) AND users.name='$user' AND users.email='$email' AND posts.id=$article AND NOT EXISTS(SELECT id FROM articles_like WHERE user='$user' AND email='$email' AND article=$article)LIMIT 1
+                ;
+                ");
+            }
+        }
+//        Like System End
+-UPDATE post set name="zanye" age='17' WHERE id=1;

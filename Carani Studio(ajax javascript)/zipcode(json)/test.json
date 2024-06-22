@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "address_components": [
+            {
+              "long_name": "90210",
+              "short_name": "90210",
+              "types": [
+                "postal_code"
+              ]
+            },
+            {
+              "long_name": "Beverly Hills",
+              "short_name": "Beverly Hills",
+              "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Los Angeles County",
+          "short_name": "Los Angeles County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "California",
+          "short_name": "CA",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Beverly Hills, CA 90210, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 34.1354771,
+            "lng": -118.3867129
+          },
+          "southwest": {
+            "lat": 34.065094,
+            "lng": -118.4423781
+          }
+        },
+        "location": {
+          "lat": 34.1030032,
+          "lng": -118.4104684
+        },
+        "location_type": "APPROXIMATE",
+        "viewport": {
+          "northeast": {
+            "lat": 34.1354771,
+            "lng": -118.3867129
+          },
+          "southwest": {
+            "lat": 34.065094,
+            "lng": -118.4423781
+          }
+        }
+      },
+      "place_id": "ChIJ7xfS-zW8woARXNkAJzX5Hs8",
+      "types": [
+        "postal_code"
+      ]
+    }
+  ],
+  "status": "OK"
+}

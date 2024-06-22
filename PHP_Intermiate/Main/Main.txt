@@ -1,0 +1,58 @@
+**Important=>Static keyword ko thone like pyi so lin di static keywords par tae sar kyone tie har class nae ma sine top buu.a pyin lu phit thwar pyi.
+**Important=>Static keyword ko thone htar thaw sar kyne ko member sign nae hte ya tae;Ex: self::$var, static::$var; $this::name;
+**Important=>Static Keyword ma par thar method or properties ko kyate tae keywords nae kaw thone lo ya tal.
+   Ex=>  class One{
+             function callMe(){
+                 return __CLASS__;
+             }
+              function hey(){
+                 echo $this->callMe(); OR echo self::callMe() OR echo static::callMe();
+             }
+         }
+__________________________________________________________________________________________
+
+**If you wanna check method in a class.You can use this function.
+if(method_exists($obj,"hey")){
+    echo "Method Exists";
+}else{
+    echo "Method not Exists";
+}
+
+**If you wanna check property in a class.You can use this function.
+if(isset($obj->name)){
+  echo "Property is exist.";
+}else{
+  echo "Property is not exist.";
+}
+
+_______________________________________________________________________________________
+************************Magic Methods*********************
+__construct           __isset                __sleep
+__destruct            __unset                __wakeup
+__get                 __call                 __toString
+__set                 __callstatic           __invoke
+                                             __clone
+Important=>If value not have,Megic Methods is  work in a class.(a lwe nae)
+________________________________________________________________________________________________________________________________________
+
+**********Interface,Abstract Class,Super Class**************
+
+ Interface                                       Abstract Class                            Super Class
+1.Can have only abstract method.           1.Can include abstruct method.                1.Can have only concrete method.
+2.Can have only Constant.                  2.Can include concrete method.                2.A class can only extends only one super class.
+3.All methods must be bisible.             3.Class must be abstruct if any of the        3.Super class can inherit any class or Abstract can implement any interface.
+4.ALl methods must be overrided.             method is abstruct.                         4.All feature work just like normal class.
+5.A class can implement more than one      4.All abstruct must be overrided.
+  interface.                               5.A class can only extend one abstract class.
+Ex=>class One implements gamerule,
+    arule,crule
+Important=>Kyan tae class twe ka extend 1 ku htet po pyi lote lo ma ya buu.But extend lote mae class ko top htet since extend lote htar lo ya tal.
+Ex=>
+ class One{
+    public $name="zenye";
+ }
+ class Two extend One{
+ }
+ class Three extend Two{
+ }
+_______________________________________________________________________________________________________________________________________________________________________

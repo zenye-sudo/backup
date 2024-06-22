@@ -1,0 +1,33 @@
+If you use post method to request ajax method,You must use
+-setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+_________________________________________________________________
+IF you request php file
+-Javascript File=>setRequestHeader("X-Requested-With","XMLHttpRequest");
+-PHP file=>function is_ajax_request(){return isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["HTTP_X_REQUESTED_WITH"]=="XMLHttpRequest"};
+___________________________________________________________________
+IF you check an element in array
+in_array(word,$array);,is_array($ary);array_search($word,$ary);array_splice($ary,$start,$length);
+___________________________________________________________________
+If you want to integer value in javascript or php
+javascript=>ParseInt();
+php=>(int) in front of value;
+________________________________________________
+If you use innerHTML,It can not see in "view page source";
+So,You can use appendChild Method.
+_______________________________________________
+Next INsteresting item is "data attirbute";
+_________________________________________________
+
+******************Very IMporttant*******
+//In JSON twin
+-First Array ko pyye sa yar ma lo hu tha paw pout htar ya mae and
+-JSON array so tar foreach ma thone pae a phye htot tar pyit tae a twet index number hte htot ya tal.
+-Khar Li Bracket twe ko twet kwin hte lo myin lo ya tal
+{}=[];
+//Next Main=>Looping array==Looping json array
+-Retrive Json datas with for in
+        for(var k in json){
+            for(var k1 in json[k]){
+                console.log(k1,json[k][k1]);
+            }
+        }

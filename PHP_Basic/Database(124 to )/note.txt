@@ -1,0 +1,36 @@
+mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+mysqli_query($database,$query);
+mysqli_multi_query;(for multi insert)
+mysqli_num_rows($);
+
+$query="SELECT*FROM users";//Get Datas
+$query='SELECT*FROM users where id=$id';//Get Data
+$query='SELECT*FROM users WHERE extra is NULL';
+$query="SELECT DISTINCT(name) users WHERE extra is NULL";//DISTINCT IS only once work.
+$query="INSERT INTO users VALUE('id','name','email','password')";//Insert Datas
+$query="UPDATE users SET name='new' WHERE name='old'";
+
+
+mysqli_connect_errno();
+mysqli_insert_id(databasename);
+
+//Creating Table
+$query="CREATE TABLE SUBJECT(
+  id INT(10) INSIGNED PRIMARY KEY AUTO_INCREMENT ,
+  name VARCHAR(225) UNIQUE NOT NULL,
+  create at date,
+  update at date
+);";
+
+//Query Modifier;
+$query="SELECT*FROM users ORDER BY id";
+////////////////////////////////// name;
+///////////////////////////////////id DESC;
+///////="SELECT*FORM users LIMIT 2,2";
+//////="SELECT*FROM users WHERE id>2";
+
+$$$$$$$$$IMPORTANT$$$$$$$$$
+//IF you brought datas from database;
+  echo $item['name'];
+//If you bought datas from json files.
+ echo $item->name;

@@ -1,0 +1,2 @@
+**************Email sending with template******************
+-mail(to,subject,message,headers,parameters(option));

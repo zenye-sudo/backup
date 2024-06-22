@@ -1,0 +1,112 @@
+**********Very Important*******
+-Can give one return in one function.if you give two return in one function,you got many many many errors.
+*****Making Photo name with time function***
+$imglink=mt_rand(time(),time())."_"ty.$_FILES['file']['name'];
+->>>>IF you move the file to other floder,You must use tmp of the file.
+***************CATCHING QUERY***********
+You can watch on index page how to using catch query
+foreach($items as $item){
+$test=$item["id"];
+<a href="details.php?pid=$test>Details</a>//Giving Query
+if($_GET["pid"]){
+$test=$_GET["pid"];
+}
+}Catching Qurey
+
+****************Pushing database values into array as key and value*************************
+<?php
+$ary=[];
+if($_GET['pid']){
+    $result=postDetails($_GET['pid']);
+    foreach($result as $item){
+        $ary["title"]=$item["title"];
+        $ary["writer"]=$item["writer"];
+        $ary["content"]=$item["content"];
+        $ary["imglink"]=$item["imglink"];
+
+*******************Checking photos(edit 1)********************
+if($_GET['pid']){
+    if(isset($_POST['submit'])){
+        $img=$_FILES['file']['name'];
+        $imglink="";
+        if($img!=NULL){
+            $imglink=$img;
+        }else{
+            $imglink=$ary['imglink'];
+        }
+        $title=$_POST['postTitle'];
+        $type=$_POST['postType'];
+        $writer=$_POST['postWriter'];
+        $content=$_POST['textarea'];
+        $pid=$_GET['pid'];
+        $result=updatePost($title,$type,$writer,$content,$imglink,$pid);
+        echo $result ? "Update Success!" : "Update Fail!";
+    }
+
+}
+
+    }
+    echo $ary["title"];
+}else{
+    echo "POst id not found!";
+}
+*******************************Pangination System*************************-
+-Firstly bring number of rows of database;//num_of_rows($database table);
+-Secondly Bulid Pangination bar with number of rows.and send qurey value;
+ <?php
+            $num=0;
+            for($i=0;$i<$rows;$i+=6(number of count post in a page.)){
+                $num++;
+               echo '<li><a href="index.php?query='.$i.'">'.$num.'</a></li>';
+            }
+ ?>
+-To show number of rows as you like,you catch query value;
+function showDatas($type,$start){
+    $db=dbConnect();
+    $qry="";
+    if($type==2){
+        $qry="SELECT * FROM post LIMIT $start,6 ";
+    }else{
+        $qry="SELECT * FROM post WHERE type=$type LIMIT $start,6";
+    }
+    return mysqli_query($db,$qry);
+}
+----------------------------------------------------------------------------------------------------------------------------
+**************************************************************************How to send many query string(very easy)*******************************F
+- echo '<li><a href="filternews.php?pid='.$_GET['pid'].'start='.$i.'">'.$num.'</a></li>';
+To get one by one value.you can use substr() function :):)
+-$rows=filteredpoststwo(2,substr($_GET['pid'],0,1));
+*****************************OR*******************************************
+<?php
+if(isset($_POST['submit'])){
+    echo "hello";
+}
+?>
+<form action="delete.php?pid=1&id=2" method="POST">
+    <input type="submit" name="submit" value="submit">
+</form>
+?>
+<?php
+if(isset($_GET['pid'])){
+    echo $_GET['pid']."<br>";
+
+}
+if(isset($_GET['id'])){
+    echo $_GET['id'];
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+********************************************Sending Keywords Query To show Search Result************************************
+<form action="search.php" method="get">//Not Post If post method,you have errors.
+<input type="text" name="text" id="text">
+<input type="submit" value="submit">
+</form>
+******************************************Searching System**********************************
+if(isset($_GET['keywords'])){
+    $keywords=$_GET['keywords'];
+    $db=dbConnect();
+    $new=mysqli_real_escape_string($db,$keywords); OR preg_match("/[^a-z0-9A-Z]/","",$var);
+//    $qry="SELECT * FROM post WHERE title LIKE '%$new%' OR writer LIKE '%$new%' OR content LIKE '%$new%'";
+//    $result=mysqli_query($db,$qry);
+//    echo "<pre>".print_r($result,true)."</pre>";
+}
+

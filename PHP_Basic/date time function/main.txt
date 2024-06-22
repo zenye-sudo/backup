@@ -1,0 +1,20 @@
+***********Using getdate() function*************
+**getdate();                                                    date_default_timezone_set("Asia/Rangoon")
+**time();                                                        $date=date('',time());
+**NOW()//SQL functionk
+
+
+*****************************using date function********************************
+a ="am" or "pm" lowercase pm                                           j =Day of the month(no leading zeros 20)
+A ="AM" OR "PM" uppercase PM                                         l = (Lower "L") Day of the week Thursday
+d =Day of month,a number with leading zeros 20                    L=Leap year ('1' for yes,'0' for no)1
+D =Day of week (three letters) Thu                                      m= Month of year(number-leading zeros)1
+F =Month name January                                                   M=  Month of year(three letters)Jan
+h= Hour (12-hour format-leading zeros)12                            r=The RFC 2833 formatted date Thu,21 Dec 2000 15:01:07 +0200
+H= Hour (24-hour format_leading zeros)22                           n=Month of year (number-no leading zeros)2
+g =Hour (12-hour format-no leading zeros)12                        s=seconds of hour 20
+G =Hour (24-hour format-no leading zeros)22                       U=Time stamp 948372444
+i =Minuutes(0-59)23                                                         y=Year(two digits)06
+                                                                                   Y=Year(four digits)2006
+                                                                                   z=Day of year(0-365)206
+                                                                                   Z=offset in seconds from GMT+5

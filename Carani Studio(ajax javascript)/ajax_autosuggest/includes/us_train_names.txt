@@ -1,0 +1,980 @@
+ACL
+Atlantic Coast Line
+L&A
+Louisiana & Arkansas
+B&O
+Baltimore & Ohio
+L&N
+Louisville & Nashville
+BAR
+Bangor & Aroostook
+MC
+Maine Central
+B&M
+Boston & Maine
+MKT
+Missouri-Kansas-Texas
+BRI
+Burlington-Rock Island
+MP
+Missouri Pacific
+C.I.&L
+Chicago, Indianapolis and Louisville (MONON)
+NC&StL
+Nashville, Chattanooga & St. Louis
+C of Ga
+Central of Georgia
+NdeM
+National Railways of Mexico
+C of NJ
+Central of New Jersey
+NYC
+New York Central
+C of Pa
+Central of Pennsylvania
+NYC&StL
+New York, Chicago & St. Louis
+CV
+Central Vermont
+NYNH&H
+New York, New Haven & Hartford
+C&O
+Chesapeake & Ohio
+NYS&W
+New York. Susquehanna & Western
+C&EI
+Chicago & Eastern Illinois
+NYO&W
+New York, Ontario & Western
+C&NW
+Chicago & North Western
+N&W
+Norfolk & Western
+CB&Q
+Chicago, Burlington & Quincy
+NP
+Northern Pacific
+CGW
+Chicago Great Western
+ON
+Ontario Northland
+CMStP&P
+Chicago, Milwaukee, St. Paul & Pacific
+PRR
+Pennsylvania Rail Road
+CN
+Canadian National
+PRSL
+Pennsylvania-Reading Seashore Line
+CP
+Canadian Pacific
+P&LE
+Pittsburgh & Lake Erie
+CRI&P
+Chicago, Rock Island & Pacific
+Reading
+Reading
+C&S
+Colorado & Southern
+RF&P
+Richmond, Fredericksburg & Potomac
+D&H
+Delaware & Hudson
+Rutland
+Rutland
+DL&W
+Delaware, Lackawanna & Western
+StLSF
+St. Louis-San Francisco
+D&RGW
+Denver & Rio Grande Western
+StLSW
+St. Louis-Southwestern
+DSS&A
+Duluth, South Shore & Atlantic
+Santa Fe
+Atchison, Topeka & Santa Fe
+ERIE
+Erie
+SAL
+Seaboard Air Line
+FEC
+Florida East Coast
+SOO
+Minneapolis, St. Paul & Sault Ste. Marie
+FW&DC
+Fort Worth & Denver City
+Southern (SR)
+Southern Railway
+GTW
+Grand Trunk Western
+SP
+Southern Pacific
+GN
+Great Northern
+SP&S
+Spokane, Portland & Seattle
+GM
+General Motors
+T&NO
+Texas & New Orleans
+GM&O
+Gulf, Mobile & Ohio
+T&P
+Texas & Pacifi
+IC
+Illinois Central
+TH&B
+Toronto, Hamilton & Buffalo
+ILL.Term
+Illinois Terminal
+UP
+Union Pacific
+KCS
+Kansas City Southern
+Wabash
+Wabash
+LI
+Long Island
+W of Ala
+Western of Alabama
+WP
+Western Pacific
+Abraham Lincoln, The
+GM&O
+Chicago-St. Louis
+
+Diesel
+Acadian
+SP
+New Orleans - Houston
+
+Steam; Diesel
+Admiral, The
+PRR
+Chicago-Washington-New York
+
+Diesel; Electric
+Advance Commodore Vanderbilt
+NYC
+New York-Chicago
+
+Electric; Diesel
+Advance Empire State Express
+NYC
+New York-Buffalo
+
+Electric; Diesel
+Advance Knickerbocker
+NYC
+Boston-New York-Buffalo-St. Louis
+
+Steam; Electric
+Advance Merchants Limited
+NYNH&H
+New York-Boston
+
+Electric; Diesel
+Adventureland, The
+CB&Q
+Kansas City-Lincoln-Billings
+
+Diesel
+Afternoon Hiawatha
+CMStP&P
+Chicago-Milwaukee-St. Paul-Minneapolis
+
+Diesel
+Afternoon Steeler
+PRR
+Pittsburgh - Cleveland
+
+Diesel
+Afternoon Twin Cities Zephyrs
+CB&Q
+Chicago-St. Paul-Minneapolis
+
+Diesel
+Aiken-Augusta Special
+PRR; Southern
+New York-Washington -Augusta
+
+Electric; Diesel
+Akronite, The
+PRR
+New York-Akron
+
+Electric; Diesel; Steam
+Ak-Sar-Ben
+CB&Q
+Chicago-Omaha-Lincoln
+Diesel
+Alamo
+SP
+New Orleans-Houston-San Antonio
+Steam; Diesel
+Allegheny, The
+PRR
+St Louis - Pittsburgh
+Diesel
+Alexandria, The
+PRR
+New York - Washington
+
+Diesel
+Alouette
+B&M; CP
+Boston-Woodsville-Montreal
+
+Diesel
+Alton Limited, The
+GM&O
+Chicago-St. Louis
+
+Diesel
+Ambassador
+B&M; CV; CN
+Boston-White River Jet.-Montreal
+
+Diesel
+Ambassador, The
+B&O
+Baltimore-\Washington-Detroit
+
+Diesel
+American, The
+PRR
+New York-Washington-St Louis
+
+Electric; Diesel
+American Royal
+CB&Q
+Chicago-St. Joseph-Kansas City
+
+Diesel
+Androscoggin
+B&M
+Portland - Boston
+
+Diesel
+Angelo, The
+Santa Fe
+Fort Worth-San Angelo
+
+Steam
+Ann Rutledge
+GM&O
+Chicago-St Louis
+
+Diesel
+Antelope, The
+Santa Fe
+Kansas City-Fort Worth
+
+Steam
+Argonaut
+SP
+Los Angeles-New Orleans
+
+Steam
+Arlington, The
+PRR
+New York-Washington
+
+Electric
+Aroostook Flyer, The
+BAR
+Bangor-Van Buren
+
+Diesel
+Arrow, The
+CMStP&P
+Chicago-Souix Falls
+
+Steam
+Arrowhead Limited
+C&NW
+Duluth - Chicago
+
+Steam; Diesel
+Arundel
+B&M; MeC
+Boston - Portland - Bangor
+
+Diesel
+Asa Packer, The
+LV
+New York-Wilkes Barre-Coxton
+
+Electric; Diesel
+Ashville Special
+PRR: Southern
+New York-Washington-Ashville
+
+Electric; Diesel
+Ashland Limited
+C&NW
+Chicago-Ashland
+
+Diesel
+Ascutney
+B&M
+Springfield - White River Junction
+
+Diesel
+Atlantic Express
+Erie
+Chicago - New York
+
+Diesel
+Aztec Eagle, The
+MP; NdeM
+San Antonio - Laredo - Mexico
+
+Steam
+Azalean, The
+L&N
+Cincinnati-New Orleans
+
+Diesel
+Badger Express, The
+GN
+St. Paul-Duluth
+
+Diesel
+Bankers, The
+NYNH&N
+Springfield-New York
+
+Diesel; Elextric
+
+Banner Blue
+Wabash
+St Louis-Chicago
+
+Diesel
+Bar Harbor (s)
+PRR,NYNH&H
+Springfield - New York
+
+Electric; Diesel
+Bay State, The
+NYNH&H
+New York - Boston
+
+Electric; Diesel
+Beachcomber (s)
+B&M
+Boston - Portland
+
+Diesel
+Beach Special (s)
+B&M
+Boston - Portland
+
+Diesel
+Berkshire, The
+NYNH&H
+New York - Pittsburgh
+
+Diesel
+Birmingham Special
+PRR; Southern; N&W
+New York - Roanoke - Chattznooga - Birmingham - Memphis
+
+Electric; Diesel; Steam
+Black Diamond, The
+LV; Reading
+New York - Philadelphi - Buffalo
+
+Electric; Diesel
+Black Gold
+StLSF
+Tulsa - Dallas - Ft Worth
+
+Steam
+Black Hawk, The
+CB&Q
+Minneapolis - Chicago
+
+Diesel
+Blue Bird
+Wabash
+Chicago - St Louis
+
+Steam
+Bluegrass, The
+C.I.&L
+Chicago - Louisville
+
+Diesel
+Bluebonnet, The
+StLSF; MKT
+St Louis - Kansas City-Dallas - Ft Worth
+
+Diesel
+Border Limited
+SP
+Houston - San Antonio - Corpus Cristi
+
+Steam
+Bostonian, The
+NYNH&H
+New York - Boston
+
+Electric; Diesel
+Broadway Limited, The
+PRR
+New York - Chicago
+
+Electric; Diesel
+
+Buffalo Day Express
+PRR
+Washington & Philadelphi - Buffalo
+
+Electric; Steam
+Buffalo - Pittsburgh Express
+NYC
+Buffalo - Pittsburgh
+
+Steam
+Buffalo - Toronto Express
+NYC
+New York - Buffalo - Toronto
+
+Electric; Steam
+Butte Special
+UP
+Salt Lake City - Butte
+
+Steam
+Badger Express, The
+GN
+St. Paul-Duluth
+
+Diesel
+Bankers, The
+NYNH&N
+Springfield-New York
+
+Diesel; Elextric
+
+Banner Blue
+Wabash
+St Louis-Chicago
+
+Diesel
+Bar Harbor (s)
+PRR,NYNH&H
+Springfield - New York
+
+Electric; Diesel
+Bay State, The
+NYNH&H
+New York - Boston
+
+Electric; Diesel
+Beachcomber (s)
+B&M
+Boston - Portland
+
+Diesel
+Beach Special (s)
+B&M
+Boston - Portland
+
+Diesel
+Berkshire, The
+NYNH&H
+New York - Pittsburgh
+
+Diesel
+Birmingham Special
+PRR; Southern; N&W
+New York - Roanoke - Chattznooga - Birmingham - Memphis
+
+Electric; Diesel; Steam
+Black Diamond, The
+LV; Reading
+New York - Philadelphi - Buffalo
+
+Electric; Diesel
+Black Gold
+StLSF
+Tulsa - Dallas - Ft Worth
+
+Steam
+Black Hawk, The
+CB&Q
+Minneapolis - Chicago
+
+Diesel
+Blue Bird
+Wabash
+Chicago - St Louis
+
+Steam
+Bluegrass, The
+C.I.&L
+Chicago - Louisville
+
+Diesel
+Bluebonnet, The
+StLSF; MKT
+St Louis - Kansas City-Dallas - Ft Worth
+
+Diesel
+Border Limited
+SP
+Houston - San Antonio - Corpus Cristi
+
+Steam
+Bostonian, The
+NYNH&H
+New York - Boston
+
+Electric; Diesel
+Broadway Limited, The
+PRR
+New York - Chicago
+
+Electric; Diesel
+
+Buffalo Day Express
+PRR
+Washington & Philadelphi - Buffalo
+
+Electric; Steam
+Buffalo - Pittsburgh Express
+NYC
+Buffalo - Pittsburgh
+
+Steam
+Buffalo - Toronto Express
+NYC
+New York - Buffalo - Toronto
+
+Electric; Steam
+Butte Special
+UP
+Salt Lake City - Butte
+
+Steam
+
+C    Back to Index
+
+Cabana (s)
+NYNH&H
+New York - Boston
+
+Electric; iesel
+California Limited
+Santa Fe
+Chicago - Denver - Los Angeles
+
+Diesel
+California Special
+Santa Fe
+Clovis - Los Angeles
+
+Diesel
+California Zephyr
+CB&Q; D&RGW; WP
+Chicago - San Francisco
+
+Diesel
+Camellia, The
+PRR; RF&P; SAL
+New York - Washington - Miami - Tampa - Sarasota -Venice
+
+Electric; Steam; Diesel
+Canadian-Niagara
+NYC; CP
+Chicago - Montreal
+
+Steam
+Cannon Ball
+N&W
+Richmond - Norfolk
+
+Steam
+Cannon Ball
+B&M
+Boston - Concorde -White River Junction - Plymouth
+
+Diesel
+Cannon Ball, The
+LI
+New York - Montauk
+
+Electric; Steam
+Capital City Special
+NYC
+Cleveland - Columbus
+
+Steam
+Capital Limited, The
+B&O; Reading; CofNJ
+Chicago - Washington - New York
+
+Diesel
+Cape Ann (s)
+B&M
+Boston - Rockport
+
+Steam
+Cardigan
+B&M
+White River Junction - Boston
+
+Diesel
+Caribou, The
+CN
+St Johns - Basques
+
+Steam
+
+Carolina Special
+NYC; Southern
+Chicago - Cincinnati - Ashville - Charleston - Goldsboro
+
+Steam; Diesel
+Cascade
+SP
+San Francisco - Portland
+
+Diesel
+Cascadian
+GN
+Spokane - Portland
+
+Diesel; Electric
+Casco
+B&M
+Boston - Portland
+
+Diesel
+
+Cavalier, The
+N&W
+Cincinnati - Columbus - Norfolk
+
+Steam
+Cavalier, The
+PRR
+New York - Cape Charles
+
+Electric; Steam
+Cayuga, The
+NYC
+New York - Rochester - Buffalo
+
+Electric; Steam
+Centennial State
+Santa Fe
+Newton - Kansas - Denver
+
+Steam
+Cherokee-Imperial
+CRIP&P; SP
+Memphis - Los Angeles
+
+Diesel; Steam
+Cheshire
+B&M
+Boston - White River Junction
+
+Diesel
+Chicago Daylight Express
+PRR
+Louisville & Cincinnati - Chicago
+
+Steam; Diesel
+Chicago Express
+C&NW
+Omaho - Chicago
+
+Diesel
+Chicago Express
+CP
+Montreal - Chicago
+
+Steam
+Chicago Limited
+C&NW
+Duluth - Chicago
+
+Diesel
+Chicago Mercury, The
+NYC
+Detroit - Chicago
+
+Diesel
+Chicago Mail
+NYC
+Cleveland - Chicago
+
+Steam
+Chicago Night Express
+B&O
+Wheeling - Chicago
+
+Steam
+Chicago Night Express
+NYC
+Cincinnatti - Chicago - St Louis
+
+Steam
+Chicago-Pittsburgh-Washington Express
+B&O
+Chicago - Washington
+
+Diesel
+Chicago Special
+NYC
+Cincinnati - Chicago
+
+Steam
+Chicagoan, The
+Santa Fe
+Oklahoma City & Kansas City - Chicago
+
+Diesel
+Chicagoan, The
+NYC
+New York - Chicago
+
+Electric; Diesel; Steam
+Chickasaw,The
+IC
+St Louis - Memphis
+
+Steam
+Chief, The
+Santa Fe
+Chicago - Los Angeles
+
+Diesel
+Chinook, The
+CP
+Calgary _ Edmunton
+
+Steam
+Chippewa Hiawatha, The
+CMStP&P
+Chicago - Green Bay - Ontonagon- Haughton
+
+Steam
+Choctaw Rocket
+CRI&P
+Memphis - Amarillo
+
+Diesel
+Cincinnati Daylight Express
+PRR
+Chicago - Cincinnati
+
+Steam
+Cincinnati Limited
+PRR
+New York - Cincinnati
+
+Electric; Diesel
+Cincinnati Night Express
+NYC
+Chicago - Cincinnati
+
+Steam
+Cincinnati Mercury
+NYC
+Cleveland - Cincinnati
+
+Steam
+Cincinnati Special (No. 416)
+NYC
+Chicago - Cincinnati
+
+Steam
+Cincinnatian, The
+B&O
+Baltimore -Washington - Cincinnati
+
+Steam
+City of Denver
+C&NW; UP
+Chicago - Denver
+
+Diesel
+City of Kansas City
+Wabash
+St Louis - Kansas City
+
+Diesel
+City of Los Angeles
+C&NW; UP
+Chicago - Los Angeles
+
+Diesel
+City of Miami
+IC; C of GA; ACL; FEC
+Chicago - Miami
+
+Diesel
+City of Milwaukee "400"
+C&NW
+Chicago - Milwaukee
+
+Diesel
+City of New Orleans
+IC
+Chicago - St Louis - Louisville - New Orleans
+
+Diesel
+
+City of Portland
+C&NW; UP
+Chicago - Portland
+
+Diesel
+City of St Louis
+Wabash; UP
+St Louis - Kansas City - Denver
+
+Diesel
+City of San Francisco
+C&NW; UP; SP
+Chicago - San Francisco
+
+Diesel
+Cleveland-Cincinnati Special
+NYC
+St Louis - Cincinnati - Cleveland
+
+Steam
+Cleveland-Cincinnati Special
+NYC
+Cleveland - Cincinnati
+
+Steam
+Cleveland Limited
+NYC
+New York - Cleveland
+
+Electric; Steam
+Cleveland Mercury, The
+NYC
+Cleveland - Detroit
+
+Diesel
+Cleveland Night Express
+B&O
+Cleveland - Washington - Baltimore
+
+Steam; Diesel
+Cleveland-St Louis Special
+NYC
+Cleveland - St Louis
+
+Steam
+Cleveland Special
+NYC
+Cincinnati - Cleveland
+
+Steam
+Clevelander, The
+PRR
+New York - Washington -Cleveland
+Electric; Diesel
+Coast Line Florida Mail
+RF&O; ACL
+Washington - Jacksonville
+Steam; Diesel
+Colonial, The
+NYNH&H; PRR
+Boston - New York - Washington
+Diesel; Electric
+Colorado Eagle
+MP; D&RGW
+St Louis - Kansas City - Pueblo - Denver
+Diesel
+Columbia River Express
+SP&S
+Pasco - Portland
+Diesel
+Columbian
+CMStP&P
+Chicago - Minneapolis - Butte - Spokane - Seattle - Tacoma
+Steam; Electric
+Columbian, The
+B&O
+Washington - Chicago
+Diesel
+Commander, The
+NYNH&H
+Boston - New York
+Diesel; Electric
+Commodore II
+NYC
+New York - Chicago
+Electric; Diesel
+Commodore Vanderbuilt, The
+NYC
+New York - Chicago
+Electric; Diesel
+Commuter "400"
+C&NW
+Chicago-Milwaukee
+Diesel
+Congressional, The
+PRR
+New York - Washington
+Electric
+Connecticut Yankee
+NYNH&H; B&M; CV; CP
+New York - Boston - White River Junction - Quebec
+Electric; Diesel; Steam
+Constitution, The
+PRR
+New York - Washington
+Electric
+Continental Limited, The (Trains 1 & 2)
+CN
+Montreal - Ottawa - Winnipeg - Jasper - Vancouver
+Steam
+Continental Limited, The (Trains 3 & 4)
+CN
+Toronto - Winnipeg - Jasper - Vancouver
+
+Steam
+Copper Country Limited
+CMStP&P; DSS&A
+Chicago - Milwaukee - Saulte Ste. Marie - Calumet
+
+Steam
+Corn Belt Rocket
+CRI&P
+Chicago - Omaha
+
+Diesel
+Cotton Blossom, The
+RF&P; SAL
+Washington - Atlanta - Birmingham
+
+Steam; Diesel
+Cranberry, The (s)
+NYNH&H
+Boston - Woods Hole
+Diesel
+Crescent, The New
+PRR; Southern; A&WP; WofAla; L&N
+New York - Washington - Atlanta - New Orleans
+Electric; Diesel
+Crusader, The
+Reading; C of NJ
+Philadelphia - New York
+Steam
+Cumberland
+B&M
+Boston - Portland
+Diesel

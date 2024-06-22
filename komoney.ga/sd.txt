@@ -1,0 +1,314 @@
+*************************Sometime javascript is better than jquery(important)******************************************
+Ex=>getting update value with jquery(not work)
+    In Javascript (Work)**
+*************************Sometime javascript is better than jquery(important)******************************************
+thunkable.com for app builder
+-Hiding Dropdown arror
+ .dropdown-toggle::after{
+    display:none;
+ }
+ -Deleting Cookie with jquery cookie
+        $(".logout").click(function(event){
+            event.preventDefault();
+                $.removeCookie('useridKoMoney',{path:'/'});
+                $.removeCookie('usernameKoMoney',{path:'/'});
+                $.removeCookie('PHPSESSID',{path:'/'});
+                $(".forChange").html('');
+        });
+
+ -Checking Cookie with jquery cookie
+ if (typeof $.cookie('useridKoMoney') != 'undefined' && typeof $.cookie('usernameKoMoney') != 'undefined') {
+ }
+ -Using Jquery ui
+  In html=>
+  <input type="text" id="datepicker">
+  In js=>
+  $("#datepicker").datepicker();
+
+ -You can get value in radio button by using querySelector
+  Ex=> var confirmVocherTime=document.querySelector('input[name=confirmVocherTime]:checked').value;
+-You can check checkbox "check or uncheck";
+            if( document.getElementById("test").checked==true){
+            }
+ -Js slice method is equal to php substr method.
+ ********************************************************Important start
+  -You can send multiple value in ajax
+ var obj={       //This is js object
+ 'key1':'value1',
+ 'key2':'value2',
+ 'key3':{
+         'key1':'value1',
+         'key2':'value2'
+         }
+ };
+ //NO use JSON.stringify
+ $.ajax({
+ 'url':'example.php',
+ 'type':'get',
+ data:obj
+ });//You can catch this data by ajax file. => $_GET['key1']; //Return is 'value1';
+ //Use Json.stringify
+ var string=JSON.stringify(obj);//Invert string to use value;
+ $.ajax({
+ 'url':'example.php',
+ 'type':'get',
+  data:{
+       'key':string
+  }
+ });//You can catch this data by ajax file. => $_GET['key']; //Return is {       //This is js object
+                                                                          'key1':'value1',
+                                                                          'key2':'value2',
+                                                                          'key3':{
+                                                                                  'key1':'value1',
+                                                                                  'key2':'value2'
+                                                                                  }
+                                                                          }
+
+
+  //the upper json object to change json_decode and call
+  $data=$_GET['key'];
+  $data=json_encode($data);
+  $data->key1 //This will executed "value1" // You must use "->" sign in the stdclass object.and you must use "." sign in the js object.To use php object,You must create "class" :)
+
+  var obj={
+  key1:"value1",
+  key2:"value2",
+  key3:{
+      key1:"value1",
+      key2:"value2",
+      key3:"value3"
+      }
+  };//This is javascript object.YOu can add key and value by this following way.
+  obj.key4="value4"; // (or) obj['key4']="value4";
+  obj.key3.key4="value4";  // (or) obj['key3']['key4']="value4";
+  and you can new key and json object.Importtan!.loot at
+  obj.key5={}; //key5 adverise object.
+  and obj.key5.key1="value1";  // or obj.key5['key1']="value1";
+  //Javascript date object
+  var new=new Date;//getting new date;
+  var hour=new.getHours();//Getting now hour.
+  var custom=new Date("Y-m-d H:i:s");//Getting custom date
+  var hour=new.getHours;//Getting custom hour.
+ ***********************************Important start
+
+ Getting day month year from date object.
+ var date=new Date("2018-07-12");
+     var day=date.getUTCDate();
+     var month=date.getUTCMonth()+1;//because utcmonth is start from zero.
+     var year=date.getUTCFullYear();
+     console.log(day);
+     selecting all elements within a div with Jquery.You can use this.
+     $(".div").children();
+
+
+     ///////////////////////////////////Cutting same varible value start/////////////////////////
+     var first="122";
+     var second="221";
+     var third="212";
+     var four="221";
+     var five="122";
+     var six="212";
+     var ary=[first,second,third,four,five,six];
+     var ne=[];
+     for(var i=0;i<ary.length;i++){
+         if( first == ary[i] ){
+             if(0 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[0];
+             }
+         }
+         if( second == ary[i] ){
+             if(1 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[1];
+             }
+         }
+         if( third == ary[i] ){
+             if(2 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[2];
+             }
+         }
+         if( four == ary[i] ){
+             if(3 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[3];
+             }
+         }
+         if( five == ary[i] ){
+             if(4 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[4];
+             }
+         }
+         if( six == ary[i] ){
+             if(5 !=i){
+                 ne.push(ary[i]);
+                 delete ary[i];
+                 delete ary[5];
+             }
+         }
+     }
+     console.log(ne);
+     console.log(ary);
+
+
+     ///////////////////////////////////Cutting same varible value start ////////////////////////////
+     //You can parse string to integer with (int) method.Ex= $integer=(int)$string;
+     //You can parse string to float with (int) method.Ex= $integer=(float)$string;
+
+
+     ************************Twod multiple countdown start *******************************
+     Insert script tag with foreach loop datas from databases each.
+     <?php foreach($datas as $key=>$value): ?>
+     For example => You can look  full code in vacSlip.php.
+                     <tbody>
+                     <tr class="d-flex mt-1">
+                         <input type="hidden" id="<?php echo $key ?>id" value="<?php echo $value['id']; ?>">
+                         <input type="hidden" id="<?php echo $key ?>targetDate" value="<?php echo $value['targetDate']; ?>">
+                         <input type="hidden" id="<?php echo $key ?>type" value="<?php echo $value['type']; ?>">
+                         <td class="col-3 m-0  pl-3 pb-0 pt-0 text-center"><div id="<?php echo $key ?>num" style="background-color:yellow;color:black;font-size:20px;width:40px;line-height:40px;border-radius:50%"><?php echo $value['num']; ?></div></td>
+                         <td class="col-4 m-0 p-0 pb-0 pt-2 text-center"><strong id="<?php echo $key ?>price"><?php echo $value['price']; ?></strong><small>(kyats)</small></td>
+                         <td class="col-6 m-0 pb-0 pt-1 text-center">
+                             <div class="row m-0 p-0">
+                                 <?php if($targetDateNewDate == date("d-m-Y",time()) && $value['status']==1 && time()<$targetDateNew): ?>
+                                     <script>
+                                             function test1(){
+                                                 var dbDate=new Date("<?php echo $value['targetDate']; ?>");
+                                                 var timer;
+                                                 <?php $now1=date("Y-m-d H:i:s",time());?>
+                                                 var now=new Date("<?php echo $now1 ?>");
+                                                 var difference=(dbDate-now)-1000;
+                                                 timer=setInterval(function(){
+                                                     var seconds = Math.floor(difference/ 1000);
+                                                     var minutes = Math.floor(seconds / 60);
+                                                     var hours = Math.floor(minutes / 60);
+                                                     hours %= 24;
+                                                     minutes %= 60;
+                                                     seconds %= 60;
+                                                     if(hours<10){
+                                                         hours="0"+hours;
+                                                     }
+                                                     if(minutes<10){
+                                                         minutes="0"+minutes;
+                                                     }
+                                                     if(seconds<10){
+                                                         seconds="0"+seconds;
+                                                     }
+                                                     document.getElementById("<?php echo $key; ?>h").innerHTML=hours;
+                                                     document.getElementById("<?php echo $key; ?>m").innerHTML=minutes;
+                                                     document.getElementById("<?php echo $key; ?>s").innerHTML=seconds;
+     //                                    // alert(difference);
+                                        if(difference<=0){
+                                            clearInterval(timer);
+                                             var num=$("#<?php echo $key ?>num").html();
+                                             var price=$("#<?php echo $key ?>price").html();
+                                             var id=$("#<?php echo $key ?>id").val();
+                                             var targetDate=$("#<?php echo $key ?>targetDate").val();
+                                             var type=$("#<?php echo $key ?>type").val();
+                                             $("#<?php echo $key ?>h").hide();
+                                             $("#<?php echo $key ?>m").hide();
+                                             $("#<?php echo $key ?>s").hide();
+                                             $("#<?php echo $key ?>checking").show();
+                                             $.ajax({
+                                                 url:"vacLiveCheck.php",
+                                                 type:"GET",
+                                                 data:{
+                                                     targetDate:targetDate,
+                                                     type:type,
+                                                     num:num,
+                                                     id:id,
+                                                     price:price
+                                                 },
+                                                 success:function(data){
+                                                     $("#<?php echo $key ?>checking").hide();
+                                                     if(data=="Closed"){
+                                                         $("#<?php echo $key ?>close").show();
+                                                     }else if(data=="Lose"){
+                                                         $("#<?php echo $key ?>lose").show();
+                                                     }else if(data.slice(0,3)=="Tot"){
+                                                         $("#<?php echo $key ?>tot").show();
+                                                         $(".balance").text(data.slice(3));
+                                                     }else{
+                                                         $("#<?php echo $key ?>win").show();
+                                                         $(".balance").text(data);
+                                                     }
+
+                                                 }
+                                             });
+
+                                        }
+                                                difference-=1000;
+                                                 },1000);
+
+
+                                             }
+                                             test1();
+
+                                        </script>
+                                 <input type="hidden" class="hidden" value="<?php echo $targetDateNew; ?>">
+                                     <div class="m-0 mt-1 mr-1 bg-danger" id="<?php echo $key ?>lose" style="display:none;font-size:15px;font-family:bold;width:40px;height:25px;padding-top:2px;border-radius:10px;">Lose</div>
+                                     <div class="m-0 mt-1 mr-1 bg-danger" id="<?php echo $key ?>close" style="display:none;padding-top:2px;font-size:15px;font-family:bold;width:43px;height:25px;border-radius:10px;">Close</div>
+                                     <div class="m-0 mr-1 mt-1 bg-success" id="<?php echo $key ?>win" style="display:none;padding-top:2px;font-size:15px;font-family:bold;width:40px;height:25px;border-radius:10px;">Win</div>
+                                     <div class="m-0 mr-1 mt-1 bg-success" id="<?php echo $key ?>tot" style="display:none;padding-top:2px;font-size:15px;font-family:bold;width:40px;height:25px;border-radius:10px;">Tot</div>
+                                     <div class="m-0 mr-1 bg-danger" id="<?php echo $key; ?>h" style="font-size:20px;width:30px;height:30px;border-radius:10px;"><?php echo date("h",$targetDateNew); ?></div>
+                                     <div class="m-0 mr-1 bg-primary" id="<?php echo $key; ?>m" style="font-size:20px;width:30px;height:30px;border-radius:10px;"><?php echo date("i",$targetDateNew); ?></div>
+                                     <div class="m-0 mr-1 bg-success" id="<?php echo $key; ?>s" style="font-size:20px;width:30px;height:30px;border-radius:10px;"><?php echo date("s",$targetDateNew); ?></div>
+                                     <div class="m-0 mr-1 mt-1 bg-primary" id="<?php echo $key; ?>checking" style="display:none;font-size:15px;font-family:bold;width:80px;height:25px;padding-top:2px;border-radius:10px;">Checking...</div>
+                                 <?php elseif($value['status']==0 && $value['wl']=="l" && $value['close']==0): ?>
+                                     <div class="m-0 mt-1 mr-1 bg-danger" style="font-size:15px;font-family:bold;width:40px;height:25px;padding-top:2px;border-radius:10px;">Lose</div>
+                                 <?php elseif($value['status']==0 && $value['wl']=="w" && $value['close']==0): ?>
+                                     <div class="m-0 mr-1 mt-1 bg-success" style="padding-top:2px;font-size:15px;font-family:bold;width:40px;height:25px;border-radius:10px;">Win</div>
+                                 <?php elseif($value['status']==0 && $value['wl']=='t' && $value['close']==0 ):?>
+                                     <div class="m-0 mr-1 mt-1 bg-success" style="padding-top:2px;font-size:15px;font-family:bold;width:40px;height:25px;border-radius:10px;">Tot</div>
+                                 <?php elseif($value['status']==0 && $value['wl']=="l" && $value['close']==1): ?>
+                                     <div class="m-0 mt-1 mr-1 bg-danger" style="padding-top:2px;font-size:15px;font-family:bold;width:43px;height:25px;border-radius:10px;">Close</div>
+                                 <?php else: ?>
+                                     <div class="m-0 mr-1 mt-1 bg-warning" style="font-size:15px;font-family:bold;width:60px;height:25px;padding-top:2px;border-radius:10px;">Waiting</div>
+                                 <?php endif; ?>
+                             </div>
+                         </td>
+                     </tr>
+                     </tbody>
+     <?php endforeach; ?>
+     ************************Twod multiple countdown end *******************************
+     ************************Preventing multiple ajax request start**************************
+      //You can check class exitst or not exitst "$(this).hasClass('loginAndRegister')";
+     ************************Preventing multiple ajax request end**************************
+     <-----------------Jquery Command-------------------->
+     $("#seen"+data+"").prevAll('.send').children(".checkCircle");
+     <--------------------How to calculate at the end of scroll of a div start ----------------------->
+             var content=$(".chatBody").scrollTop()+$(".chatBody").innerHeight();
+                     if(content>=$(".chatBody").prop("scrollHeight")){
+                             $(".chatBody").scrollTop($('.chatBody').prop('scrollHeight'));
+                     }
+     <--------------------How to calculate at the end of scroll of a div end ----------------------->
+     <!--------------------Checking Bottom is lastest bottom --------------------------------------->
+         function scrollIsBottom(){
+             var scrollTop=$("#container").scrollTop();
+             var scrollHeight=$("#container").prop("scrollHeight");
+             var clientHeight=$("#container").height();
+             if(parseInt(clientHeight)+parseInt(scrollTop)==parseInt(scrollHeight)) {
+                 return true;
+             }else{
+                 return false;
+             }
+         }
+     <!-------------------Checking Bottom is lastest bottom------------------------------->
+ -str.trim() is cut whitespace
+ ****************************************************WaitForImages Function is very useful start(Very Useful)*******************************************************
+            success:function(data){
+                $(data).waitForImages(function(){
+                    $("#chatDiv ul").prepend(data);
+                            var new_height=$("#card-block").height();
+                            var newScrollTop=scrollTop+new_height- height;
+                            $(".chatBody").scrollTop(newScrollTop);
+                });
+            }
+ ****************************************************WaitForImages Function is very useful end(Very Useful)*******************************************************
+

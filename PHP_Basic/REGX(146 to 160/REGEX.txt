@@ -1,0 +1,109 @@
+delimiter
+-"//";
+-"+ +";
+-"# #";
+-"% %";
+-"! !";
+
+
+
+
+
+
+*******************Anchor and Bordri***************
+$var "Waiferkolar";
+preg-match("/  /",$var);
+-wai        => check if wai contain in string//very exact(a ti a kya)
+-^wai       =>check if wai at the start of string
+-wai$       =>check if wai is at the end of string
+-^wai$      =>check if wai is only string 
+-/^$/       =>check empty string
+
+
+
+
+
+
+
+*******************Character Class****************
+preg_match("/[]/",$var);
+-[0-9]        -[^a]//a ma hote tae a char ta lone lone par lar.ta lone par yin a lote lote mae 
+-[a-z]        -[@]
+-[A-Z]        -^[A-Z]//shae sone mar par lar sit mae.
+
+              -[^b-v]//b ka nay v hte ma hote tae a char ta lone lone par lar sit mae.
+
+
+
+
+
+
+
+  *************************Quantifiers(POSIX)*****************************
+  p+          =>matches any string containing at least one p.
+  p*          =>matches any string containing zero or more p's.
+  p?          =>matches any string containing zero or more p's.
+  p{N}        =>matches any string containing a sequence of N p's.//set tie lar ma ya mae.
+  p{2,3}      =>containing a sequence of two or three p's.
+  p{2,}       =>containing a sequence of at least two p's.//na lone nae a htet.
+  ***additional***
+  p.p         =>containing p,followed by any character,and another p.//very exact//ta lone tae
+  p\wp        =>match one word character
+  ^.{2}$      =>containing exactly two characters.
+  <b>(.*)</b> =>matches enclosed within <b> and </b>.
+  p(hp)*      =>containing a p followed by zero or more sequence hp.
+  /d          =>only digit.           /D     =>none digit.
+  /s          =>white space.          /S     =>none white space.
+  /w =>a word character[a-z,A-Z,0-9]   /W    =>a non-word character.
+
+
+
+
+
+
+  *******************Predefined Character Ranges****************
+  $replace=preg_replace("/[[::]]/","",$var);
+  -[[:alpha:]]         =>containing alhabetic characters aZ through zZ;
+  -[[:digit:]]         =>containing numerical digits 0 through 9;
+  -[[:alnum:]]         =>containing alphanumberic characters aA through zZ and 0 through 9
+  -[[:space:]]         =>matches any string containing a space;
+
+
+
+  *********************preg_split function****************
+  $var=There is a need there is a way.
+-preg_split(pattern,subject,limit(option),flags(option));
+array(
+[0]  =>There        Pattern to search
+[1]  =>is           input string
+[2]  =>a            limit null             PREG_SPLIT_NO_EMPTY
+[3]  =>need         flags null             PREG_SPLIT_DELIM_CAPTURE//NO USE
+[4]  =>there                               PREG_SPLIT_OFFSET_CAPTURE//SHOW MULTI DIMESIONAL ARRAY FORM
+[5]  =>is
+[6]  =>a
+[7]  =>way.
+);
+
+******************************preg_match_all function************************
+-preg_match_all(pattern,subject,matches,flags)
+ pattern         =>reg pattern to search for
+ subject         =>String or paragraph to match
+ matches         =>Arra where all match are assigned
+ flags           =>define result order
+                  PREG_PATTERN_ORDER(default)     PREG_SET_ORDER
+
+*****************************PREX_QUOTE function****************************
+preg_quote function add \sign in front of php special charcters.PHP special characters are \*?[^]$(){}=!<>|:-
+-preg_quote($var,p)//optional is assign by our.
+
+
+*********************REGEX LOOK Around*****************************
+
+           =>positive lookahead
+           =>positive lookbehind
+Lookarround                        =>Atomic Group
+           =>negative lookahead
+           =>negative lookbehind
+
+
+
